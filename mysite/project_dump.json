@@ -1,0 +1,115 @@
+[
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$320000$GaKsObRJvTy9b3oHxzQmUE$6OKsv4QNFuZ4l/2gJGWTyFj58f60GP66wJy71JIpzp8=",
+        "last_login": "2022-05-30T21:52:16.176Z",
+        "is_superuser": true,
+        "username": "admin",
+        "first_name": "",
+        "last_name": "",
+        "email": "nandprsd62@gmail.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2022-05-30T21:51:04.843Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "kyzcwggqks3np2gwyfr3p5xvem4z1qyc",
+    "fields": {
+        "session_data": ".eJxVjDsOwjAQRO_iGlkb_9ampM8ZrPUPB5AjxUmFuDuJlAI03bw382aetrX6refFT4ld2cAuv12g-MztAOlB7T7zOLd1mQI_FH7Szsc55dftdP8OKvW6r6XYAwQaEERO0iFop4qwzgRrAiKpIFGhFEVELCSiyWTRhQGggNbs8wWhGDZ8:1nvnJA:nqJQ3vSzXaG5tLQUBVYa5UoVvJOzju5kQXNCw0k2sP4",
+        "expire_date": "2022-06-13T21:52:16.199Z"
+    }
+},
+{
+    "model": "myapp.data",
+    "pk": 662,
+    "fields": {
+        "name": "orchid",
+        "price": 500000,
+        "rent": 5000,
+        "emi": 500,
+        "tax": 150,
+        "exp": 32,
+        "expenses_monthly": 682,
+        "income_monthly": 4318
+    }
+},
+{
+    "model": "myapp.data",
+    "pk": 663,
+    "fields": {
+        "name": "esplanade",
+        "price": 300000,
+        "rent": 3000,
+        "emi": 300,
+        "tax": 230,
+        "exp": 34,
+        "expenses_monthly": 564,
+        "income_monthly": 2436
+    }
+},
+{
+    "model": "myapp.data",
+    "pk": 664,
+    "fields": {
+        "name": "supreeme",
+        "price": 400000,
+        "rent": 4000,
+        "emi": 400,
+        "tax": 455,
+        "exp": 67,
+        "expenses_monthly": 922,
+        "income_monthly": 3078
+    }
+},
+{
+    "model": "myapp.data",
+    "pk": 665,
+    "fields": {
+        "name": "magante",
+        "price": 600000,
+        "rent": 6000,
+        "emi": 600,
+        "tax": 211,
+        "exp": 97,
+        "expenses_monthly": 908,
+        "income_monthly": 5092
+    }
+},
+{
+    "model": "myapp.data",
+    "pk": 666,
+    "fields": {
+        "name": "belair",
+        "price": 1000000,
+        "rent": 10000,
+        "emi": 1000,
+        "tax": 345,
+        "exp": 554,
+        "expenses_monthly": 1899,
+        "income_monthly": 8101
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2022-05-30T21:58:51.034Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "myapp",
+            "data"
+        ],
+        "object_id": "1",
+        "object_repr": "Data object (1)",
+        "action_flag": 3,
+        "change_message": ""
+    }
+}
+]
