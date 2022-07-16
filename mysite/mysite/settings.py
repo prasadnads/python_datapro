@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
 from pathlib import Path
+import dj_database_url
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -48,6 +49,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'mysite.urls'
@@ -83,15 +85,17 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 
 
 
-DATABASES = {
-     'default': {
-         'ENGINE': 'django.db.backends.postgresql',
-         'NAME': 'projectdjango_db',
-         'USER': 'postgres',
-         'PASSWORD':'Nandupr_92',
-         'HOST':'localhost'
-     }
- }
+# DATABASES = {
+#      'default': {
+#          'ENGINE': 'django.db.backends.postgresql',
+#          'NAME': 'projectdjango_db',
+#          'USER': 'postgres',
+#          'PASSWORD':'Nandupr_92',
+#          'HOST':'localhost'
+#      }
+#  }
+
+DATABASES = {'default': dj_database_url.config(default='postgres://postgres:Nandupr_92@localhost/projectdjango_db')}
 
 
 # Password validation
@@ -136,3 +140,7 @@ STATIC_URL = '/static/'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Whitenoise settings
+
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
